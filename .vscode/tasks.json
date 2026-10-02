@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build MFMS",
+            "type": "shell",
+            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-Wall", "-Wextra", "-g3",
+                "main.c",
+                "employees.c",
+                "budget.c",
+                "suppliers.c",
+                "assets.c",
+                "reports.c",
+                "-o", "output/main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "run MFMS",
+            "type": "shell",
+            "command": "${workspaceFolder}\\output\\main.exe",
+            "dependsOn": "build MFMS",
+            "problemMatcher": []
+        }
+    ]
+}

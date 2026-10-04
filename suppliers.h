@@ -1,14 +1,26 @@
 #ifndef SUPPLIERS_H
 #define SUPPLIERS_H
 
-#include "common.h"
+#define MAX_SUPPLIERS 100
 
+typedef struct
+{
+    int supplierID;
+    char name[100];
+    char email[100];
+    char telephone[30];
+    char location[100];
+} Supplier;
+
+/* Supplier management functions */
+void supplierMenu(void);
 void addSupplier(void);
 void displaySuppliers(void);
-void searchSupplierByID(void);
-void searchSupplierByName(void);
+void searchSupplier(void);
+void compareSuppliers(void);
 
-int getSupplierCount(void);
-Supplier* getSuppliers(void);
+/* Helper functions */
+int findSupplierByID(int id);
+void clearInputBuffer(void);
 
 #endif

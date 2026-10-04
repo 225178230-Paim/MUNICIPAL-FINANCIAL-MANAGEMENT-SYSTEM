@@ -10,8 +10,12 @@ void calculateSalaryInfo(void);
 void displayEmployeeInfo(void);
 
 double calculateTotalSalary(Employee e);
-
+double calculateNetSalary(Employee e);
 int getEmployeeCount(void);
 Employee* getEmployees(void);
+
+void sortEmployeesBySalary(void);
+void saveEmployeesToFile(void);
+void loadEmployeesFromFile(void);
 
 #endif

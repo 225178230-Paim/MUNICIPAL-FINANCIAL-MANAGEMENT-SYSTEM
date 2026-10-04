@@ -21,6 +21,7 @@ typedef struct {
     double basicSalary;
     double housingAllowance;
     double transportAllowance;
+    double tax;
 } Employee;
 
 typedef struct {

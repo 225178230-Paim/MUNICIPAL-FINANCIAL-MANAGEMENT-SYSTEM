@@ -45,5 +45,9 @@ typedef struct {
     char   department[DEPT_LEN];
     char   condition[COND_LEN];
 } Asset;
-
+int getValidInt(const char *prompt, int min, int max);
+double getValidDouble(const char *prompt, double min, double max);
+void getValidString(const char *prompt, char *buffer, int size);
+int getValidMenuChoice(int min, int max);
+void clearInputBuffer(void);
 #endif

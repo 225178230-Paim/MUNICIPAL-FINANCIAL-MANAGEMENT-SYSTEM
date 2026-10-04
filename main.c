@@ -1,3 +1,16 @@
+/*
+ * ============================================================
+ *  MUNICIPAL FINANCIAL MANAGEMENT SYSTEM (MFMS)
+ *  File:         main.c
+ *  Course:       PAP521S - Programming in Practice
+ *  Project:      Project A - Foundation System
+ *  Student 6:    Functions, Integration & Validation
+ *  Student Name: Liswani Blessings Liswani
+ *  Student No:   225005255
+ *  Date:         02 October 2026
+ * ============================================================
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,12 +22,6 @@
 #include "suppliers.h"
 #include "assets.h"
 #include "reports.h"
-
-int    getValidInt(const char *prompt, int min, int max);
-double getValidDouble(const char *prompt, double min, double max);
-void   getValidString(const char *prompt, char *buffer, int size);
-int    getValidMenuChoice(int min, int max);
-void   clearInputBuffer(void);
 
 void displayMainMenu(void);
 void displayEmployeeMenu(void);
@@ -43,13 +50,27 @@ int main(void)
         choice = getValidMenuChoice(1, 6);
 
         switch (choice) {
-            case 1: handleEmployeeMenu(); break;
-            case 2: handleBudgetMenu();   break;
-            case 3: handleSupplierMenu(); break;
-            case 4: handleAssetMenu();    break;
-            case 5: handleReportsMenu();  break;
-            case 6: printf("\nThanks for using MFMS. Goodbye!\n\n"); break;
-            default: printf("\nHmm, that choice isn't on the menu. Try again.\n"); break;
+            case 1:
+                handleEmployeeMenu();
+                break;
+            case 2:
+                handleBudgetMenu();
+                break;
+            case 3:
+                handleSupplierMenu();
+                break;
+            case 4:
+                handleAssetMenu();
+                break;
+            case 5:
+                handleReportsMenu();
+                break;
+            case 6:
+                printf("\nThanks for using MFMS. Goodbye!\n\n");
+                break;
+            default:
+                printf("\nHmm, that choice isn't on the menu. Try again.\n");
+                break;
         }
     } while (choice != 6);
 

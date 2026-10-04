@@ -12,7 +12,7 @@
 | 2 | [Peneyambeko] | [226099962] |
 | 3 | [Masake] | [226055841] |
 | 4 | [Nghidileko] | [226075583] |
-| 5 | [Name] | [Student number] |
+| 5 | [Nyambe] | [225124459] |
 | 6 | [Liswani] | [225005255] |
 | 7 | [Paim] | [225178230] |
 
@@ -75,6 +75,6 @@ Choose an option from the main menu by entering its number, then follow the on-s
 | [Peneyambeko] | Budget Management | [e.g. budget.c: ...] |
 | [Masake] | Supplier Management | [e.g. suppliers.c: ...] |
 | [Nghidileko] | Asset Management | [e.g. assets.c: ...] |
-| [Name] | Reports | [e.g. reports.c: ...] |
+| [Nyambe] | Reports | [e.g. reports.c: ...] |
 | [Liswani] | Functions, integration and validation | [e.g. main.c, validation functions] |
 | [Paim] | Testing, documentation and Git coordination | [README, report, test log] |

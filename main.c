@@ -4,9 +4,6 @@
  *  File:         main.c
  *  Course:       PAP521S - Programming in Practice
  *  Project:      Project A - Foundation System
- *  Student 6:    Functions, Integration & Validation
- *  Student Name: Liswani Blessings Liswani
- *  Student No:   225005255
  *  Date:         02 October 2026
  * ============================================================
  */

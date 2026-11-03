@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-static Supplier suppliers 100;
+#define MAX_SUPPLIERS 100
 
 void employeeReport(void);
 void budgetReport(void);

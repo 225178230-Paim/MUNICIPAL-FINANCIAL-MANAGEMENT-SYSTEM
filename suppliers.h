@@ -3,6 +3,8 @@
 
 #include "common.h"
 
+#define MAX_SUPPLIERS 100
+
 void addSupplier(void);
 void displaySuppliers(void);
 void searchSupplierByID(void);
